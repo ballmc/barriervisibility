@@ -1,11 +1,8 @@
 {
   "mixinConfigs": [
-    "examplemod.mixins.json"
+    "barriervisibility.mixins.json"
   ],
   "entrypoints": [
-    "com.example.mod.ExampleMod"
-  ],
-  "hooks": [
-    "com.example.mod.hook.MinecraftHook"
+    "me.ballmc.BarrierVisibility.Main"
   ]
 }

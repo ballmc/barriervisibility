@@ -1,4 +1,4 @@
-rootProject.name = "ExampleMod"
+rootProject.name = "BarrierVisibility"
 
 pluginManagement {
     repositories {
