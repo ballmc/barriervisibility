@@ -12,15 +12,23 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import me.ballmc.BarrierVisibility.BarrierVisibility;
+import me.ballmc.BarrierVisibility.Config;
+
 @Mixin(BlockBarrier.class)
 public abstract class MixinBlockBarrier extends Block {
+    BarrierVisibility bv = BarrierVisibility.getInstance();
+    Config config = bv.getConfig();
+
     public MixinBlockBarrier(Material blockMaterialIn) {
         super(blockMaterialIn);
     }
 
     @Inject(method = "getRenderType", at = @At("HEAD"), cancellable = true)
     public void getRenderType(CallbackInfoReturnable<Integer> cir) {
-      cir.setReturnValue(3);
+        if (config.BarrierVisibilityEnabled) {
+            cir.setReturnValue(3);
+        }
     }
 
     @Override
