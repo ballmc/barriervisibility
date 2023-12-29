@@ -1,4 +1,4 @@
-# Barrier Visibility Mod for Weave
+# Barrier Visibility Mod for Weave <img alt="downloadcount" src="https://img.shields.io/github/downloads/ballmc/barriervisibility/total?color=990ecc&style=for-the-badge" />
 
 ## Allows you to see barrier blocks
 
