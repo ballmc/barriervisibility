@@ -1,0 +1,8 @@
+{
+  "mixinConfigs": [
+    "barriervisibility.mixins.json"
+  ],
+  "entrypoints": [
+    "me.ballmc.BarrierVisibility.Main"
+  ]
+}
